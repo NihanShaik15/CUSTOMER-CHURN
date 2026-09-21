@@ -1,0 +1,59 @@
+{
+  "dataset_shape": [
+    7043,
+    20
+  ],
+  "eda_summary": {
+    "overall_churn_rate_pct": 26.54,
+    "churn_rate_by_contract": {
+      "Two year": 2.83,
+      "One year": 11.27,
+      "Month-to-month": 42.71
+    },
+    "churn_rate_by_internet_service": {
+      "No": 7.4,
+      "DSL": 18.96,
+      "Fiber optic": 41.89
+    },
+    "avg_tenure_churned": 18.0,
+    "avg_tenure_retained": 37.6,
+    "avg_monthly_charges_churned": 74.44,
+    "avg_monthly_charges_retained": 61.27
+  },
+  "model_results": {
+    "Logistic Regression": {
+      "accuracy": 0.7388218594748048,
+      "precision": 0.5050847457627119,
+      "recall": 0.7967914438502673,
+      "f1_score": 0.6182572614107884,
+      "roc_auc": 0.8397840295538506
+    },
+    "Random Forest": {
+      "accuracy": 0.7679205110007097,
+      "precision": 0.5447619047619048,
+      "recall": 0.7647058823529411,
+      "f1_score": 0.6362625139043382,
+      "roc_auc": 0.8421387790953008
+    },
+    "XGBoost": {
+      "accuracy": 0.7579843860894251,
+      "precision": 0.5304990757855823,
+      "recall": 0.767379679144385,
+      "f1_score": 0.6273224043715847,
+      "roc_auc": 0.8399467824020254
+    }
+  },
+  "best_model": "Random Forest",
+  "top_10_features_rf": {
+    "Contract": 0.2093,
+    "tenure": 0.146,
+    "TotalCharges": 0.1145,
+    "MonthlyCharges": 0.1057,
+    "OnlineSecurity": 0.1001,
+    "TechSupport": 0.0786,
+    "InternetService": 0.058,
+    "PaymentMethod": 0.0377,
+    "OnlineBackup": 0.0311,
+    "PaperlessBilling": 0.0208
+  }
+}
